@@ -11,6 +11,8 @@ An event scheduler written in Python3, Flask, REST APIs to manage events
 4. Access the index.py (note: this is accessed through HTTP server, not through the port number the flask app is running on). By making few changes we can also implement to let index.html run on the same port as flask app (through route establishment)
 ![plot](./pics/flaskRun.png)
 ![plot](./pics/2.png)
+![plot](./pics/1-2.png)
+![plot](./pics/1-1.png)
 
 # What we can do?
 1. Add events (2 sample events are already added)
