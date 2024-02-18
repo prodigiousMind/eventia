@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Event Manager</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   <center><img width="30%" src="eventia3.png"/></center>
+    <div class="form-popup" id="myForm">
+    <!-- A button to close the pop up form -->
+    <button class="close-button" onclick="closeForm()">X</button>
+    <!-- The form element -->
+    <form id="formpop">
+      <input type="text" id="titlepop" placeholder="Title" required>
+      <input type="text" id="descriptionpop" placeholder="Description">
+      <input type="datetime-local" id="start_timepop" placeholder="Start Time" required>
+      <input type="datetime-local" id="end_timepop" placeholder="End Time" required>
+      <button type="submit" id="createpop">Create Event</button>
+    </form>
+  </div>
+    <div id="container">
+        <!-- Create a form to add new events -->
+        <form id="form">
+            <input type="text" id="title" placeholder="Title" required>
+            <input type="text" id="description" placeholder="Description">
+            <input type="datetime-local" id="start_time" placeholder="Start Time" required>
+            <input type="datetime-local" id="end_time" placeholder="End Time" required>
+            <button type="submit" id="create">Create Event</button>
+        </form>
+
+
+
+        <h1>Next (Top 3): </h1>
+        <div id="events">
+        </div>
+        <!-- Display the existing events in a grid -->
+        <!--<div id="events">
+           Each event will have a title, description, start time, end time, and a delete button
+        </div>-->
+
+        <div class="container-search">
+        <div class="form-search">
+            <input type="search" id="search" placeholder="Search events by Title or Description" class="search-field" required>
+            <button type="submit-search" class="search-button" onclick="getEvents(1)">
+                🔍
+            </button>
+        </div>
+    </div>
+        <table id="eventsTab">
+          <tr>
+            <th>Id</th>
+            <th>Title</th>
+            <th>Description</th>
+            <th>Start Time</th>
+            <th>End Time</th>
+            <th>Ops</th>
+          </tr>
+          
+        </table>
+
+    </div>
+    <script src="event.js"></script>
+    <script src="form-popup.js"></script>
+
+</body>
+</html>

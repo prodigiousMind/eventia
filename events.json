@@ -1,0 +1,16 @@
+[
+    {
+        "id": 1,
+        "title": "Meeting",
+        "description": "Discuss project status",
+        "start_time": "2024-02-20T10:00:00",
+        "end_time": "2024-02-20T11:00:00"
+    },
+    {
+        "title": "sss",
+        "description": "ssssss ss",
+        "start_time": "2024-02-14T03:33",
+        "end_time": "2024-02-20T03:33",
+        "id": 3
+    }
+]
